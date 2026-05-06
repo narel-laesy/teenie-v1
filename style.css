@@ -25,3 +25,89 @@ button {
     color: white;
     border: none;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* PAGE BACKGROUND */
+body {
+    background: linear-gradient(135deg, #0b0b14, #1a0f2e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* LOGIN CARD */
+.login-box {
+    background: rgba(20, 20, 35, 0.95);
+    padding: 35px 25px;
+    width: 320px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(160, 90, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* BRAND SECTION */
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* LOGO */
+.logo {
+    width: 85px;
+    height: 85px;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(160, 90, 255, 0.6);
+    margin-bottom: 10px;
+}
+
+/* TITLE */
+h1 {
+    color: white;
+    letter-spacing: 4px;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* INPUT FIELDS */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* BUTTON */
+button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    opacity: 0.9;
+}
+
+/* ERROR MESSAGE */
+#message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
