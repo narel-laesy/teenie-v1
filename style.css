@@ -13,14 +13,13 @@ body {
     height: 100vh;
 }
 
-.login-box {
-    background: rgba(20, 20, 35, 0.95);
-    padding: 35px 25px;
-    width: 320px;
-    border-radius: 18px;
+login-box {
+    background: #ffffff;
+    padding: 40px 30px;
+    width: 340px;
+    border-radius: 24px;
     text-align: center;
-    box-shadow: 0 0 30px rgba(160, 90, 255, 0.2);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 
 .brand {
