@@ -15,12 +15,18 @@ body {
 }
 
 .login-box {
-    background: white;
     width: 360px;
     padding: 40px 30px;
     border-radius: 28px;
     text-align: center;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+
+    background: rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
 .brand {
@@ -38,11 +44,12 @@ body {
     margin-bottom: 10px;
 }
 
-h1 {
+h1, h2, p, label {
     color: white;
-    letter-spacing: 4px;
-    font-size: 22px;
-    margin-bottom: 10px;
+}
+
+.signup-link {
+    color: white;
 }
 
 input {
