@@ -8,18 +8,39 @@
 
     <div class="login-box">
         <div class="brand">
-        <img src="logo.png" class="logo">
-        <h1>TEENIE</h1>
+    <img src="logo.png" class="logo">
+    <h1>TEENIE</h1>
+    <p class="tagline">Learn. Grow. Shine.</p>
+</div>
+
+<div class="welcome">
+    <h2>Welcome Back!</h2>
+    <p>Sign in to continue your journey</p>
+</div>
+
+<div class="form-section">
+    <input type="text" id="username" placeholder="Username">
+
+    <input type="password" id="password" placeholder="Password">
+
+    <div class="options">
+        <label>
+            <input type="checkbox">
+            Remember me
+        </label>
+
+        <a href="#">Forgot password?</a>
     </div>
-        
-        <input type="text" id="username" placeholder="Enter username"><br><br>
-        <input type="password" id="password" placeholder="Enter password"><br><br>
 
-        <button onclick="sign up()">Sign up</button>
-         <button onclick="login()">Login</button>
+    <button onclick="login()">Sign In</button>
 
+    <p id="message"></p>
 
-        <p id="message"></p>
+    <div class="signup-link">
+        Don't have an account?
+        <a href="#">Sign up</a>
+    </div>
+    
     </div>
 
     <script src="script.js"></script>
