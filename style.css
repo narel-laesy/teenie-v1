@@ -6,11 +6,12 @@
 }
 
 body {
-    background: linear-gradient(135deg, #0b0b14, #1a0f2e);
+    background: linear-gradient(135deg, #0b0b14, #1a1035);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
 .login-box {
@@ -45,12 +46,12 @@ h1 {
 }
 
 input {
-    width: 90%;
-    padding: 10px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 8px;
-    outline: none;
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 15px;
 }
 
 button {
