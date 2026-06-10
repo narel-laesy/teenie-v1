@@ -28,24 +28,22 @@ body {
 
 .login-card {
   animation: glow 3s infinite ease-in-out;
+    border: 1px solid rgba(168, 85, 247, 0.35);
+
+box-shadow:
+    0 0 10px rgba(168,85,247,.3),
+    0 0 30px rgba(168,85,247,.2),
+    0 0 60px rgba(59,130,246,.15);
 }
 
 .login-box {
-    width: 360px;
+    width: 400px;
     padding: 40px 30px;
     border-radius: 28px;
     text-align: center;
 
-    background: rgba(255, 255, 255, 0.08);
-
-    backdrop-filter: blur(14px);
-
-    border: 1px solid rgba(255, 255, 255, 0.15);
-
-    box-shadow:
-    0 0 15px rgba(140, 70, 255, 0.25),
-    0 0 35px rgba(100, 50, 255, 0.18),
-    0 15px 40px rgba(0, 0, 0, 0.25);
+    background: rgba(25, 20, 45, 0.85);
+    backdrop-filter: blur(15px);
 }
 
 .brand {
