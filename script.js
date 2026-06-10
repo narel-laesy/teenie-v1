@@ -1,26 +1,27 @@
-function signup() {
-    let user = document.getElementById("username").value;
-    let pass = document.getElementById("password").value;
+const form = document.getElementById("loginForm");
+const message = document.getElementById("message");
 
-    if (user === "" || pass === "") {
-        document.getElementById("message").innerText = "Fill all fields!";
-        return;
-    }
+form.addEventListener("submit", function(event){
 
-    localStorage.setItem(user, pass);
+```
+event.preventDefault();
 
-    document.getElementById("message").innerText = "Account created!";
+const email =
+document.getElementById("email").value.trim();
+
+const password =
+document.getElementById("password").value.trim();
+
+if(email === "" || password === ""){
+
+    message.textContent =
+    "Please fill in all fields.";
+
+    return;
 }
 
-function login() {
-    let user = document.getElementById("username").value;
-    let pass = document.getElementById("password").value;
+message.textContent =
+"Login successful!";
+```
 
-    let savedPassword = localStorage.getItem(user);
-
-    if (savedPassword === pass) {
-        window.location.href = "home.html";
-    } else {
-        document.getElementById("message").innerText = "Wrong login details!";
-    }
-}
+});
