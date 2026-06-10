@@ -1,10 +1,13 @@
-const form = document.getElementById("loginForm");
-const message = document.getElementById("message");
+const form =
+document.getElementById("loginForm");
 
-form.addEventListener("submit", function(event){
+const message =
+document.getElementById("message");
+
+form.addEventListener("submit",(e)=>{
 
 ```
-event.preventDefault();
+e.preventDefault();
 
 const email =
 document.getElementById("email").value.trim();
@@ -15,7 +18,7 @@ document.getElementById("password").value.trim();
 if(email === "" || password === ""){
 
     message.textContent =
-    "Please fill in all fields.";
+    "Please fill all fields.";
 
     return;
 }
