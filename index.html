@@ -1,211 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-    <title>TEENIE Login</title>
+<title>TEENIE Login</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet">
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
 <body>
 
-    <!-- Background Planets -->
-    <div class="planet planet-left"></div>
-    <div class="planet planet-right"></div>
+<div class="bg-orb left-orb"></div>
+<div class="bg-orb right-orb"></div>
 
-    <!-- Decorative Dots -->
-    <div class="dots dots-top"></div>
-    <div class="dots dots-bottom"></div>
+<div class="login-card">
 
-    <!-- Main Container -->
-    <div class="login-container">
+    <div class="corner-dots top-dots"></div>
+    <div class="corner-dots bottom-dots"></div>
 
-        <!-- Left Circuit -->
-        <div class="circuit-left"></div>
+    <div class="logo-container">
 
-        <!-- Right Circuit -->
-        <div class="circuit-right"></div>
+        <div class="logo-ring"></div>
 
+        <div class="logo-symbol">
+            T✦
+        </div>
 
-        <!-- LOGO SECTION -->
+    </div>
 
-        <div class="logo-section">
+    <h1 class="brand">
+        TEENIE
+    </h1>
 
-            <div class="logo-glow"></div>
+    <p class="tagline">
+        LEARN. GROW.
+        <span>SHINE.</span>
+    </p>
 
-            <!-- Put your logo image here -->
-            <img src="images/teenie-logo.png"
-                 class="teenie-logo"
-                 alt="TEENIE Logo">
+    <h2>
+        Welcome Back
+    </h2>
 
-            <!-- If you don't have the image yet,
-                 temporarily use this:
+    <p class="subtitle">
+        Sign in to continue your journey
+    </p>
 
-            <div class="temp-logo">T✦</div>
+    <form>
 
-            -->
+        <div class="input-box">
+
+            <i class="fa-regular fa-user"></i>
+
+            <input
+            type="text"
+            placeholder="Username">
 
         </div>
 
 
-        <h1 class="brand-name">
-            TEENIE
-        </h1>
+        <div class="input-box">
 
-        <p class="brand-tagline">
-            LEARN. GROW.
-            <span>SHINE.</span>
-        </p>
+            <i class="fa-solid fa-lock"></i>
 
-
-        <!-- WELCOME -->
-
-        <h2 class="welcome-title">
-            Welcome Back
-        </h2>
-
-        <p class="welcome-subtitle">
-            Sign in to continue your journey
-        </p>
-
-
-        <!-- FORM -->
-
-        <form id="loginForm">
-
-            <!-- USERNAME -->
-
-            <div class="input-box">
-
-                <i class="fa-regular fa-user"></i>
-
-                <input
-                    type="text"
-                    placeholder="Username"
-                    required>
-
-            </div>
-
-
-            <!-- PASSWORD -->
-
-            <div class="input-box">
-
-                <i class="fa-solid fa-lock"></i>
-
-                <input
-                    type="password"
-                    id="password"
-                    placeholder="Password"
-                    required>
-
-                <button
-                    type="button"
-                    id="togglePassword">
-
-                    <i class="fa-regular fa-eye"></i>
-
-                </button>
-
-            </div>
-
-
-            <!-- OPTIONS -->
-
-            <div class="options">
-
-                <label>
-
-                    <input type="checkbox">
-
-                    Remember me
-
-                </label>
-
-                <a href="#">
-                    Forgot password?
-                </a>
-
-            </div>
-
-
-            <!-- SIGN IN -->
+            <input
+            type="password"
+            id="password"
+            placeholder="Password">
 
             <button
-                class="signin-btn"
-                type="submit">
+            type="button"
+            id="togglePassword">
 
-                SIGN IN
+                <i class="fa-regular fa-eye"></i>
 
             </button>
 
-
-            <!-- DIVIDER -->
-
-            <div class="divider">
-
-                <span></span>
-
-                <p>OR</p>
-
-                <span></span>
-
-            </div>
+        </div>
 
 
-            <!-- GOOGLE -->
+        <div class="options">
 
-            <button
-                type="button"
-                class="google-btn">
+            <label>
 
-                <img
-                    src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
-                    alt="Google">
+                <input type="checkbox">
 
-                Continue with Google
+                Remember me
 
-            </button>
+            </label>
 
+            <a href="#">
+                Forgot password?
+            </a>
 
-            <!-- SIGN UP -->
-
-            <p class="signup-text">
-
-                Don't have an account?
-
-                <a href="#">
-                    Sign up
-                </a>
-
-            </p>
-
-        </form>
-
-    </div>
+        </div>
 
 
-    <script src="script.js"></script>
+        <button
+        class="signin-btn">
+
+            SIGN IN
+
+        </button>
+
+
+        <div class="divider">
+
+            <span></span>
+
+            OR
+
+            <span></span>
+
+        </div>
+
+
+        <button
+        class="google-btn"
+        type="button">
+
+            <img
+            src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">
+
+            Continue with Google
+
+        </button>
+
+
+        <p class="signup">
+
+            Don't have an account?
+
+            <a href="#">
+                Sign up
+            </a>
+
+        </p>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
